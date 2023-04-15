@@ -1,0 +1,13 @@
+{% for article in article_list %}
+
+<div>
+    <h1>{{article.heading}}</h1>
+    <p>{{article.time}}</p>
+
+    <img src="{{ article.image_url }}" height="400px" width="400px">
+    <p>{{article.tags}}</p>
+    <p>Created at: {{article.created_at}}</p>
+    <p>{{article.article}}</p>
+</div>
+
+{% endfor %}
